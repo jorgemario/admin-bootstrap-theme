@@ -1,0 +1,29 @@
+{% include head.html %}
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    {% include navbar.html %}
+  </div>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav">
+            {% include sidebar.html %}
+        </div><!--/.well -->
+      </div><!--/span-->
+      <div class="span9">
+        {{ content }}
+      </div><!--/span-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+      {% include foot.html %}
+    </footer>
+
+  </div><!--/.fluid-container-->
+
+  {% include scripts.html %}
+</body>
+</html>
