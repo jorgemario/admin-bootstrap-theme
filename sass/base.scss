@@ -1,0 +1,77 @@
+$primary-color: #0B61A4;
+$backgroundImage: "/images/groovepaper.png";
+$para-color: #eee;
+$heading-color: #555555;
+$border-color: #E3E3E3;
+$gradient-start-color: #FFFFFF;
+$gradient-end-color: #F1F1F1;
+
+/*@import "compass/css3/box-shadow";*/
+@import "compass/css3";
+@import "compass/utilities";
+
+@mixin gradient {
+  @include background-image(linear-gradient(center top, $gradient-start-color $gradient-end-color));
+}
+
+body {
+  background: url($backgroundImage) repeat transparent;
+} 
+
+.brand {
+  background-color: $primary-color;
+  color: white;
+}
+
+.brand:hover {
+  text-decoration: "underline";
+}
+
+.navbar-fixed-top {
+  .navbar-inner {
+    border: 0;
+    @include box-shadow(0 3px 5px hsl(0, 0%, 80%));
+  }
+}
+
+.para {
+  @include clearfix;
+  @include border-radius(4px);
+  width: auto;
+  margin-top: 1.5em;
+  border: 1px solid $border-color;
+
+  .para-title {
+    @include gradient;
+    /*background-color: $para-color;*/
+    height: 35px;
+    /*line-height: 35px;*/
+    font-weight: bold;
+    padding: 0 5px;
+
+    h4 {
+      font-size: 16px;
+      line-height: 33px;
+      color: $heading-color;
+      margin: 0;
+    }
+  }
+
+  .para-content {
+    background-color: white;
+    padding: 12px 15px 15px;
+  }
+}
+
+#sidenav {
+  ul {
+    background-color: white;
+  }
+  li {
+    @include gradient;
+    height: 35px;
+  }
+  .active {
+    background-color: $primary-color;
+  }
+}

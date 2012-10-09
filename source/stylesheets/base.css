@@ -1,0 +1,81 @@
+/*@import "compass/css3/box-shadow";*/
+/* line 17, ../../sass/base.scss */
+body {
+  background: url("/images/groovepaper.png") repeat transparent;
+}
+
+/* line 21, ../../sass/base.scss */
+.brand {
+  background-color: #0b61a4;
+  color: white;
+}
+
+/* line 26, ../../sass/base.scss */
+.brand:hover {
+  text-decoration: "underline";
+}
+
+/* line 31, ../../sass/base.scss */
+.navbar-fixed-top .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 3px 5px #cccccc;
+  -moz-box-shadow: 0 3px 5px #cccccc;
+  box-shadow: 0 3px 5px #cccccc;
+}
+
+/* line 37, ../../sass/base.scss */
+.para {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: auto;
+  margin-top: 1.5em;
+  border: 1px solid #e3e3e3;
+}
+/* line 44, ../../sass/base.scss */
+.para .para-title {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f1f1f1));
+  background-image: -webkit-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: -moz-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: -o-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: linear-gradient(center top, #ffffff, #f1f1f1);
+  /*background-color: $para-color;*/
+  height: 35px;
+  /*line-height: 35px;*/
+  font-weight: bold;
+  padding: 0 5px;
+}
+/* line 52, ../../sass/base.scss */
+.para .para-title h4 {
+  font-size: 16px;
+  line-height: 33px;
+  color: #555555;
+  margin: 0;
+}
+/* line 60, ../../sass/base.scss */
+.para .para-content {
+  background-color: white;
+  padding: 12px 15px 15px;
+}
+
+/* line 67, ../../sass/base.scss */
+#sidenav ul {
+  background-color: white;
+}
+/* line 70, ../../sass/base.scss */
+#sidenav li {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f1f1f1));
+  background-image: -webkit-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: -moz-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: -o-linear-gradient(center top, #ffffff, #f1f1f1);
+  background-image: linear-gradient(center top, #ffffff, #f1f1f1);
+  height: 35px;
+}
+/* line 74, ../../sass/base.scss */
+#sidenav .active {
+  background-color: #0b61a4;
+}
