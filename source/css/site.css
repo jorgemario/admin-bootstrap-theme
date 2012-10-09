@@ -13,6 +13,15 @@ h3 {
 	color:         #F90;
 }
 
+form{
+	background-color: white;
+	padding: 10px;
+}
+
+.form-actions{
+	background-color: inherit;
+}
+
 .widget-table .table {
 	margin-bottom: 0;
 	border:        none;
