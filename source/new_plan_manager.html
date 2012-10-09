@@ -14,17 +14,68 @@ title: Bootstrap based theme - jorgemario
     <div class="control-group">
       <label class="control-label" for="inputName">Nombre</label>
       <div class="controls">
-        <input type="text" id="inputName" placeholder="Nombre">
+        <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span8">
       </div>
     </div>
     <div class="control-group">
+      <label class="control-label" for="inputName">Descripcion</label>
+      <div class="controls">
+        <textarea class="span8"></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Restricciones</label>
+      <div class="controls">
+        <textarea class="span8"></textarea>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Precio</label>
+      <div class="controls">
+        $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Permitir Venta Publica</label>
+      <div class="controls">
+        <input type="checkbox" checked="checked">
+      </div>
+    </div>
+
+  </fieldset>
+  <fieldset>
+    <legend>Creditos</legend>
+    <div class="control-group">
       <label class="control-label" for="inputName">Creditos</label>
       <div class="controls">
-        <input type="text" id="inputName" placeholder="Nombre">
-        <label class="checkbox">
-          <input type="checkbox"> Remember me
-        </label>
+        <input type="text" id="inputName" placeholder="ej: 10">
+        <p class="help-inline">o</p>
+        <label class="checkbox inline">
+          <input type="checkbox">
+          Creditos Ilimitados
+      </label>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Duracion</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Ej: 3" class="span2">
+        <select class"inline" class="span2">
+          <option>Dias</option>
+          <option>Semanas</option>
+          <option>Meses</option>
+          <option>Años</option>
+        </select>
       </div>
     </div>
   </fieldset>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Save</button> 
+    <button class="btn">Cancel</button>
+  </div>
+
+
 </form>
