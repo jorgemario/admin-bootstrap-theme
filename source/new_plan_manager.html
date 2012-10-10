@@ -33,7 +33,10 @@ title: Bootstrap based theme - jorgemario
     <div class="control-group">
       <label class="control-label" for="inputName">Precio</label>
       <div class="controls">
-        $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
+        <div class="input-prepend">
+          <span class="add-on">$</span>
+          <input class="span2" id="prependedInput" size="16" type="text" placeholder="Ej: 120.000">
+        </div>
       </div>
     </div>
 

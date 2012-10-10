@@ -1,0 +1,145 @@
+---
+layout: base
+title: Bootstrap based theme - jorgemario
+---
+
+<h1 class="page-title">
+  <i class="icon-cog"></i>
+  Settings
+</h1>
+
+<ul id="myTab" class="nav nav-tabs">
+  <li><a href="account.html">Datos Basicos</a></li>
+  <li class="active"><a href="account.html">Usuarios</a></li>
+  <li><a href="account.html">Mensajes</a></li>
+  <li><a href="account.html">Partners</a></li>
+  <li><a href="account.html">Plan</a></li>
+  <li><a href="account.html">Facturas</a></li>
+</ul>
+
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Informacion General</legend>
+    <div class="control-group">
+      <label class="control-label" for="first_name">Nombre</label>
+      <div class="controls">
+        <input type="text" id="first_name" placeholder="Ej: Juan" class="span5">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="last_name">Apellido</label>
+      <div class="controls">
+        <input type="text" id="last_name" placeholder="Ej: Maya" class="span5">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="Username">Username</label>
+      <div class="controls">
+        <input type="text" id="Username" placeholder="Ej: juanmaya" class="span2">
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="notes">Notas</label>
+      <div class="controls">
+        <textarea class="span5" id="notes"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Informacion de Contacto</legend>
+    <div class="control-group">
+      <label class="control-label" for="email">Email</label>
+      <div class="controls">
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-envelope"></i></span>
+          <input class="string required date span3" id="email" name="email" required="required" type="text" placeholder="Ej: juanemaya@gmail.com">
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="mobile">Celular</label>
+      <div class="controls">
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-phone-sign"></i></span>
+          <input class="string required date span3" id="mobile" name="mobile" required="required" type="text" placeholder="Ej: 4133312">
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="phone">Casa</label>
+      <div class="controls">
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-phone"></i></span>
+          <input class="string required date span3" id="phone" name="phone" required="required" type="text" placeholder="Ej: 3123441">
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="direccion">Direccion</label>
+      <div class="controls">
+        <textarea class="span5" id="direccion"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Configuraciones de Seguridad</legend>
+    <div>
+      <div class="control-group">
+        <label class="control-label" for="phone">Administrador</label>
+        <div class="controls">          
+          <label class="checkbox">
+            <input required="required" type="checkbox"/>
+            Es administrador
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="phone">Permisos</label>
+      <div class="controls">          
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Configurar Sitio
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Configurar Planes
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Configurar Calendario
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Notificaciones
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Subscripciones
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Asistencia
+        </label>
+        <label class="checkbox">
+          <input required="required" type="checkbox"/>
+          Reportes
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-info"><i class="icon-user"></i> Crear Usuario</button> 
+    <button class="btn">Cancelar</button>
+  </div>
+
+</form>
+
+<script>
+  $('.date').datepicker({});
+</script>
