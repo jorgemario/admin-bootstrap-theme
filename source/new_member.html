@@ -1,0 +1,99 @@
+---
+layout: base
+title: Bootstrap based theme - jorgemario
+---
+<h1 class="page-title">
+  <i class="icon-group"></i>
+  Nuevo Miembro
+</h1>
+
+
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Informacion General</legend>
+    <div class="control-group">
+      <label class="control-label" for="first_name">Nombre</label>
+      <div class="controls">
+        <input type="text" id="first_name" placeholder="Ej: Juan" class="span5">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="last_name">Apellido</label>
+      <div class="controls">
+        <input type="text" id="last_name" placeholder="Ej: Maya" class="span5">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="email">Email</label>
+      <div class="controls">
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-envelope"></i></span>
+          <input class="string required date span3" id="email" name="email" required="required" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="notes">Notas</label>
+      <div class="controls">
+        <textarea class="span5" id="notes"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Informacion de Compra</legend>
+    <div class="control-group">
+      <label class="control-label" for="plan">Plan</label>
+      <div class="controls">
+        <select id="plan" name="plan">
+          <option>Seleccionar Plan</option>
+          <option>Tiquetera x 8</option>
+          <option>Tiquetera x 12</option>
+          <option>Mensualidad</option>
+          <option>Estudiantes</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="expiration">Fecha de Compra</label>
+      <div class="controls">
+        <div class="input-prepend">
+          <span class="add-on"><i class="icon-calendar"></i></span>
+          <input type="text" id="expiration" class="span2 date">
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="plan">Forma de pago</label>
+      <div class="controls">
+        <select id="plan" name="plan">
+          <option>Seleccionar Forma de Pago</option>
+          <option>Efectivo</option>
+          <option>Transferencia Bancaria</option>
+          <option>Tarjeta de Credito</option>
+          <option>Otra</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="detalles">Detalles</label>
+      <div class="controls">
+        <textarea id="detalles" class="span5" name="detalles"></textarea>
+      </div>
+    </div>
+
+  </fieldset>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-info"><i class="icon-th-list"></i> Crear Plan</button> 
+    <button class="btn">Cancelar</button>
+  </div>
+
+</form>
+
+<script>
+  $('.date').datepicker({});
+</script>

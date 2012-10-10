@@ -185,7 +185,7 @@ textarea{
 	text-shadow:  1px 1px 2px rgba(255, 255, 255, .5);
 }
 
-.page-title > .pull-right{
+.page-title > .pull-right, .widget-header > .pull-right{
 	margin-right: 5px;
 }
 

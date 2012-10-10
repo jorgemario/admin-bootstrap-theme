@@ -4,7 +4,7 @@ title: Bootstrap based theme - jorgemario
 ---
 
 <h1 class="page-title">
-  <i class="icon-home"></i>
+  <i class="icon-calendar"></i>
   Editar Evento
 </h1>
 
@@ -22,25 +22,25 @@ title: Bootstrap based theme - jorgemario
 
 <div class="tab-content">
   <div class="tab-pane active" id="assistents">
-    <div class="widget widget-table">
-
-      <div class="stat-container">
-        <div class="stat-holder">
-          <div class="stat">
-            <span>4</span>
-            Total Asistentes
-          </div>
-        </div>
-        <div class="stat-holder">
-          <div class="stat">
-            <span>35</span>
-            Promedio
-          </div>
+      
+    <div class="stat-container">
+      <div class="stat-holder">
+        <div class="stat">
+          <span>4</span>
+          Total Asistentes
         </div>
       </div>
+      <div class="stat-holder">
+        <div class="stat">
+          <span>35</span>
+          Promedio
+        </div>
+      </div>
+    </div>
 
+    <div class="widget widget-table">
       <div class="widget-header">
-          <i class="icon-th-list"></i>
+          <i class="icon-group"></i>
           <h3>Lista de Asistentes</h3>
       </div> <!-- /widget-header -->
   
@@ -49,6 +49,8 @@ title: Bootstrap based theme - jorgemario
           <thead>
             <tr>
               <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Email</th>
               <th>Fecha de Reserva</th>
               <th>Fecha de Subscripcion</th>
               <th>Fecha Vencimiento</th>
@@ -58,7 +60,9 @@ title: Bootstrap based theme - jorgemario
           
           <tbody>
             <tr>
-              <td>Marta Mendez</td>
+              <td>Claudia</td>
+              <td>Ramirez</td>
+              <td>cramirez@gma.com</td>
               <td>Hace 2 dias</td>
               <td>Hace 3 meses</td>
               <td>En 3 meses</td>
@@ -73,7 +77,9 @@ title: Bootstrap based theme - jorgemario
             </tr>
 
             <tr>
-              <td>Juan E. Maya</td>
+              <td>Juan E.</td>
+              <td>Maya</td>
+              <td>jmaya@gma.com</td>
               <td>Hace 4 dias</td>
               <td>Hace 1 meses</td>
               <td>En 1 dia</td>
@@ -88,7 +94,9 @@ title: Bootstrap based theme - jorgemario
             </tr>
 
             <tr>
-              <td>Gabriela Soja</td>
+              <td>Gabriela</td>
+              <td>Soja</td>
+              <td>gabi@gma.com</td>
               <td>Hace 1 dias</td>
               <td>Hace 5 meses</td>
               <td>En 6 meses</td>
@@ -103,7 +111,9 @@ title: Bootstrap based theme - jorgemario
             </tr>
 
             <tr>
-              <td>Javier Arango</td>
+              <td>Javier</td>
+              <td>Arango</td>
+              <td>javier@gma.com</td>
               <td>Hace 5 dias</td>
               <td>Hace 5 meses</td>
               <td>En 2 meses</td>
@@ -119,6 +129,17 @@ title: Bootstrap based theme - jorgemario
           </tbody>
         </table>
       </div> <!-- /widget-content -->
+    </div>
+
+    <div class="pagination pagination-right">
+      <ul>
+        <li><a href="#">Prev</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
     </div>
 
     <form action="" class="form-horizontal">
@@ -143,19 +164,25 @@ title: Bootstrap based theme - jorgemario
         <div class="control-group">
           <label class="control-label" for="inputName">Nombre</label>
           <div class="controls">
-            <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span6">
+            <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span5">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputName">Encargado</label>
+          <div class="controls">
+            <input type="text" id="inputName" placeholder="Ej: Arnold" class="span5">
           </div>
         </div>
         <div class="control-group">
           <label class="control-label" for="inputName">Descripcion</label>
           <div class="controls">
-            <textarea class="span6"></textarea>
+            <textarea class="span5"></textarea>
           </div>
         </div>
         <div class="control-group">
           <label class="control-label" for="inputName">Restricciones</label>
           <div class="controls">
-            <textarea class="span6"></textarea>
+            <textarea class="span5"></textarea>
           </div>
         </div>
 

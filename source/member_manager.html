@@ -1,0 +1,261 @@
+---
+layout: base
+title: Bootstrap based theme - jorgemario
+---
+<h1 class="page-title">
+  <i class="icon-group"></i>
+  Manejo de Membresias  
+
+  <div class="pull-right">
+    <a href="new_member.html" class="btn btn-small btn-warning"><i class="icon-group"></i> Adicionar Membresia</a>
+  </div>
+</h1>
+
+<div class="tabbable">
+  <div class="nav nav-tabs">
+    <li class="active">
+      <a href="#members" data-toggle="tab">Membresias</a>
+    </li>
+    <li>
+      <a href="#attendance" data-toggle="tab">Asistencia</a>
+    </li>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="members">
+
+      <div class="stat-container">
+        <div class="stat-holder">
+          <div class="stat">
+            <span>432</span>
+            Membresias Totales
+          </div>
+        </div>
+        <div class="stat-holder">
+          <div class="stat">
+            <span>40</span>
+            Membresias Inactivas
+          </div>
+        </div>
+    </div>
+
+      <div class="widget widget-table">
+        <div class="widget-header">
+            <div class="dropdown">
+                <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                  <i class="icon-group"></i>
+                  <h3>Miembros <b class="caret"></b></h3>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a>Miembros Activos</a></li>
+                  <li><a>Miembros Inactivos</a></li>
+                </ul>
+            </div>
+        </div> <!-- /widget-header -->
+          
+        <div class="widget-content">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Plan Activo</th>
+                <th>Subscripto en</th>
+                <th>Finaliza en</th>
+                <th>Pendientes</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juan E.</td>
+                <td>Maya</td>
+                <td>jmaya@gma.com</td>
+                <td>Tiquetera X 8</td>
+                <td>Hace 27 dias</td>
+                <td>En 3 dias</td>
+                <td>3</td>
+                <td class="action-td">
+                  <a href="new_plan_manager.html" class="btn btn-small btn-info">
+                    <i class="icon-arrow-right"></i>               
+                  </a>
+                  <a href="#attendance" data-toggle="tab" class="btn btn-small btn-warning">
+                    <i class="icon-signin"></i>               
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Javier</td>
+                <td>Arang</td>
+                <td>javier@gma.com</td>
+                <td>Mensual</td>
+                <td>Hace 5 meses</td>
+                <td>En 3 meses</td>
+                <td>Ilimitados</td>
+                <td class="action-td">
+                  <a href="new_plan_manager.html" class="btn btn-small btn-info">
+                    <i class="icon-arrow-right"></i>               
+                  </a>
+                  <a href="#attendance" data-toggle="tab" class="btn btn-small btn-warning">
+                    <i class="icon-signin"></i>               
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Gabriela</td>
+                <td>Soja</td>
+                <td>gabi@gma.com</td>
+                <td>Tiquetera X 12</td>
+                <td>Hace 2 meses</td>
+                <td>En 1 dia</td>
+                <td>3</td>
+                <td class="action-td">
+                  <a href="new_plan_manager.html" class="btn btn-small btn-info">
+                    <i class="icon-arrow-right"></i>               
+                  </a>
+                  <a href="#attendance" data-toggle="tab" class="btn btn-small btn-warning">
+                    <i class="icon-signin"></i>               
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Claudia</td>
+                <td>Ramirez</td>
+                <td>cramirez@gma.com</td>
+                <td>Estudiantil</td>
+                <td>Hace 2 dias</td>
+                <td>En 28 dias</td>
+                <td>Ilimitados</td>
+                <td class="action-td">
+                  <a href="new_plan_manager.html" class="btn btn-small btn-info">
+                    <i class="icon-arrow-right"></i>               
+                  </a>
+                  <a href="#attendance" data-toggle="tab" class="btn btn-small btn-warning">
+                    <i class="icon-signin"></i>               
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Mila</td>
+                <td>Made</td>
+                <td>mila@gma.com</td>
+                <td>mensualidad</td>
+                <td>Hace 27 dias</td>
+                <td>En 3 dias</td>
+                <td>Ilimitado</td>
+                <td class="action-td">
+                  <a href="new_plan_manager.html" class="btn btn-small btn-info">
+                    <i class="icon-arrow-right"></i>               
+                  </a>
+                  <a href="#attendance" data-toggle="tab" class="btn btn-small btn-warning">
+                    <i class="icon-signin"></i>               
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- /widget-content -->
+      </div>
+
+      <div class="pagination pagination-right">
+        <ul>
+          <li><a href="#">Prev</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="tab-pane" id="attendance">
+
+      <div class="widget widget-table">
+        <div class="widget-header">
+          <i class="icon-calendar"></i>
+          <h3>Agenda del dia</h3>
+        </div>
+        <div class="widget-content">
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+                <th>Encargado</th>
+                <th>Inscritos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10:30 am</td>
+                <td><a href="edit_event.html">Tae-bo</a></td>
+                <td>Arnold</td>
+                <td>27</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <form action="" class="form-horizontal">
+        <fieldset>
+          <legend>Asitencia</legend>
+          <div class="control-group string required">
+            <label class="string required control-label" for="time">Fecha</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on"><i class="icon-calendar"></i></span>
+                <input class="string required datetime span2" id="time" name="time" required="required" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="activity">Actividad</label>
+            <div class="controls">
+              <select>
+                <option>Spinning</option>
+                <option>Tae-Bo</option>
+                <option>Step</option>
+                <option>Zumba</option>
+                <option>Aerobicos</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label" for="member">Subscriptor</label>
+            <div class="controls">
+              <input type="text" id="member" data-provide="typeahead" placeholder="Ej: Juan E. Maya">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="member">Numero de Asistencias</label>
+            <div class="controls">
+              <input class="span1" data-validate="true" id="asistencia" min="0" name="asistencia" step="any" type="number" value="1">
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-info"><i class="icon-signin"></i> Registrar Asistencia </button> 
+            <button class="btn">Cancelar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.datetime').datetimepicker({
+      ampm : true, 
+      minDate: new Date(),
+      dateFormat: "d/m/yy"
+  });
+
+  $('#member').typeahead({
+    source: ['Juan E. Maya', 'Javier Arango', 'Gabriela Soja', 'Claudia Ramirez', 'Mila Made']
+  });
+</script>
