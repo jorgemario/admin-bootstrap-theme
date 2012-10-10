@@ -2,141 +2,286 @@
 layout: base
 title: Bootstrap based theme - jorgemario
 ---
+
 <h1 class="page-title">
   <i class="icon-home"></i>
-  Nuevo Evento
+  Editar Evento
 </h1>
 
+<div class="tabbable">
+  <div class="nav nav-tabs">
+    <li>
+      <a href="#form" data-toggle="tab">Informacion General</a>
+    </li>
+    <li class="active">
+      <a href="#assistents" data-toggle="tab">Asistentes</a>
+    </li>
+  </div>
+  <div class="tab-content"></div>
+</div>
 
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Informacion General</legend>
-    <div class="control-group">
-      <label class="control-label" for="inputName">Nombre</label>
-      <div class="controls">
-        <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span8">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputName">Descripcion</label>
-      <div class="controls">
-        <textarea class="span8"></textarea>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputName">Restricciones</label>
-      <div class="controls">
-        <textarea class="span8"></textarea>
-      </div>
-    </div>
+<div class="tab-content">
+  <div class="tab-pane active" id="assistents">
+    <div class="widget widget-table">
 
-    <div class="control-group">
-      <label class="control-label" for="inputName">Precio</label>
-      <div class="controls">
-        $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
-        <p class="help-inline">o</p>
-        <label class="checkbox inline">
-          <input type="checkbox">
-          Gratis
-      </label>
-      </div>
-    </div>
-
-    <div class="control-group">
-      <label class="control-label" for="inputName">Permitir Venta Publica</label>
-      <div class="controls">
-        <input type="checkbox" checked="checked">
-      </div>
-    </div>
-
-    <div class="control-group">
-      <label class="control-label" for="inputName">Requiere Matricula</label>
-      <div class="controls">
-        <input type="checkbox" checked="checked">
-      </div>
-    </div>
-
-  </fieldset>
-
-  <fieldset>
-    <fieldset>
-      <legend>Progamacion</legend>
-      <div class="control-group string required">
-        <label class="string required control-label" for="time">Fecha Iincio</label>
-        <div class="controls">
-          <div class="input-prepend">
-            <span class="add-on"><i class="icon-calendar"></i></span>
-            <input class="string required datetime span6 hasDatepicker" id="time" name="time" required="required" type="text">
+      <div class="stat-container">
+        <div class="stat-holder">
+          <div class="stat">
+            <span>4</span>
+            Total Asistentes
+          </div>
+        </div>
+        <div class="stat-holder">
+          <div class="stat">
+            <span>35</span>
+            Promedio
           </div>
         </div>
       </div>
 
-      <div class="control-group">
-        <label class="control-label" for="inputName">Duracion</label>
-        <div class="controls">
-          <input type="text" id="inputName" placeholder="Ej: 30" class="span2">
-          <select class"inline" class="span2">
-            <option>Minutos</option>
-            <option>Horas</option>
-          </select>
-        </div>
-      </div>
-    
-      <div class="control-group select required">
-        <label class="select required control-label" for="repeat">Se Repite</label>
-        <div class="controls">
-          <select class="select required" name="repeat">
-            <option value="never" selected="selected">never</option>
-            <option value="every_day">Diario</option>
-            <option value="every_week">Cada Semana</option>
-            <option value="every_2weeks">Cada 2 Semanas</option>
-            <option value="every_month">Cada Mes</option>
-            <option value="every_year">Cada Año</option>
-          </select>
-        </div>
-      </div>
-        
-        <div id="repeat-configuration" class="control-group">
-          <label class="radio_buttons control-label">Repeat Ends</label>
+      <div class="widget-header">
+          <i class="icon-th-list"></i>
+          <h3>Lista de Asistentes</h3>
+      </div> <!-- /widget-header -->
+  
+      <div class="widget-content">
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha de Reserva</th>
+              <th>Fecha de Subscripcion</th>
+              <th>Fecha Vencimiento</th>
+              <th></th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>Marta Mendez</td>
+              <td>Hace 2 dias</td>
+              <td>Hace 3 meses</td>
+              <td>En 3 meses</td>
+              <td class="action-td">
+                <a href="new_plan_manager.html" class="btn btn-small btn-warning">
+                  <i class="icon-ok"></i>               
+                </a>          
+                <a href="javascript:;" class="btn btn-small btn-danger">
+                  <i class="icon-remove"></i>           
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Juan E. Maya</td>
+              <td>Hace 4 dias</td>
+              <td>Hace 1 meses</td>
+              <td>En 1 dia</td>
+              <td class="action-td">
+                <a href="new_plan_manager.html" class="btn btn-small btn-warning">
+                  <i class="icon-ok"></i>               
+                </a>          
+                <a href="javascript:;" class="btn btn-small btn-danger">
+                  <i class="icon-remove"></i>           
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Gabriela Soja</td>
+              <td>Hace 1 dias</td>
+              <td>Hace 5 meses</td>
+              <td>En 6 meses</td>
+              <td class="action-td">
+                <a href="new_plan_manager.html" class="btn btn-small btn-warning">
+                  <i class="icon-ok"></i>               
+                </a>          
+                <a href="javascript:;" class="btn btn-small btn-danger">
+                  <i class="icon-remove"></i>           
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Javier Arango</td>
+              <td>Hace 5 dias</td>
+              <td>Hace 5 meses</td>
+              <td>En 2 meses</td>
+              <td class="action-td">
+                <a href="new_plan_manager.html" class="btn btn-small btn-warning">
+                  <i class="icon-ok"></i>               
+                </a>          
+                <a href="javascript:;" class="btn btn-small btn-danger">
+                  <i class="icon-remove"></i>           
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- /widget-content -->
+    </div>
+
+    <form action="" class="form-horizontal">
+        <fieldset>
+          <legend>Adicionar Asistente</legend>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Subscriptor</label>
+            <div class="controls">
+              <input type="text" id="inputName" placeholder="Nombre o Cedula" class="span3">
+              <button type="submit" class="btn btn-small btn-info"><i class="icon-signin"></i> Adicionar</button> 
+              <button type="submit" class="btn btn-small btn-warning"><i class="icon-ok"></i> Confirmar</button> 
+            </div>
+          </div>
+        </fieldset>
+    </form>
+
+  </div>
+  <div class="tab-pane" id="form">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Informacion General</legend>
+        <div class="control-group">
+          <label class="control-label" for="inputName">Nombre</label>
           <div class="controls">
-            <label class="radio">
-              <input id="repeat_ends_never" type="radio" name="repeat_ends" value="never" checked="checked">
-              Never
-            </label>
-            <label class="radio">
-              <input type="radio" name="repeat_ends" value="date">
-              On Specific Date
-            </label>
+            <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span6">
           </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputName">Descripcion</label>
+          <div class="controls">
+            <textarea class="span6"></textarea>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputName">Restricciones</label>
+          <div class="controls">
+            <textarea class="span6"></textarea>
+          </div>
+        </div>
 
-          <div class="control-group string optional" id="repeat_end_date-configuration" style="">
-            <label class="string optional control-label" for="repeat_end_date">Terminar Repeticiones En</label>
+        <div class="control-group">
+          <label class="control-label" for="inputName">Precio</label>
+          <div class="controls">
+            $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
+            <p class="help-inline">o</p>
+            <label class="checkbox inline">
+              <input type="checkbox">
+              Gratis
+          </label>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputName">Permitir Venta Publica</label>
+          <div class="controls">
+            <input type="checkbox" checked="checked">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputName">Requiere Matricula</label>
+          <div class="controls">
+            <input type="checkbox" checked="checked">
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <fieldset>
+          <legend>Progamacion</legend>
+          <div class="control-group string required">
+            <label class="string required control-label" for="time">Fecha Iincio</label>
             <div class="controls">
               <div class="input-prepend">
                 <span class="add-on"><i class="icon-calendar"></i></span>
-                <input class="string required datetime span6 hasDatepicker" id="time" name="time" required="required" type="text">
+                <input class="string required datetime span2" id="time" name="time" required="required" type="text">
               </div>
             </div>
           </div>
-        </div>
-    </fieldset>
-  </fieldset>
 
-  <div class="form-actions">
-    <button type="submit" class="btn btn-primary">Save</button> 
-    <button class="btn">Cancel</button>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Duracion</label>
+            <div class="controls">
+              <input type="text" id="inputName" placeholder="Ej: 30" class="span1">
+              <select class"inline" class="span2">
+                <option>Minutos</option>
+                <option>Horas</option>
+              </select>
+            </div>
+          </div>
+        
+          <div class="control-group select required">
+            <label class="select required control-label" for="repeat">Se Repite</label>
+            <div class="controls">
+              <select id="repeat" class="select required" name="repeat">
+                <option value="never" selected="selected">Nunca</option>
+                <option value="every_day">Diario</option>
+                <option value="every_week">Cada Semana</option>
+                <option value="every_2weeks">Cada 2 Semanas</option>
+                <option value="every_month">Cada Mes</option>
+                <option value="every_year">Cada Año</option>
+              </select>
+            </div>
+          </div>
+            
+            <div id="repeat-configuration" class="control-group" style="display:none;">
+              <label class="radio_buttons control-label">Repeat Ends</label>
+              <div class="controls">
+                <label class="radio">
+                  <input id="repeat_ends_never" type="radio" name="repeat_ends" value="never" checked="checked">
+                  Never
+                </label>
+                <label class="radio">
+                  <input type="radio" name="repeat_ends" value="date">
+                  On Specific Date
+                </label>
+              </div>
+
+              <div id="ends-on" class="control-group string optional" id="repeat_end_date-configuration" style="display:none;">
+                <label class="string optional control-label" for="repeat_end_date">Termina En</label>
+                <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-calendar"></i></span>
+                    <input class="string required date span2" id="repeat_end_date" name="repeat_end_date" required="required" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </fieldset>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-info"><i class="icon-calendar"></i> Crear Evento</button> 
+        <button class="btn">Cancelar</button>
+      </div>
+    </form>
   </div>
-
-  <script>
-    $('.datetime').datetimepicker(
-      {
+</div>
+<script>
+      $('.datetime').datetimepicker({
         ampm : true, 
         minDate: new Date(),
         dateFormat: "d/m/yy"
       }
     );
     $('.date').datepicker({minDate: new Date()});
-  </script>
 
+    $('#repeat').change(function(){
+      var val = $(this).val();
+      if (val == 'never'){
+        $('#repeat-configuration').hide();
+      }else{
+        $('#repeat-configuration').show();
+      }
+    });
 
-</form>
+    $('input[name="repeat_ends"]').change(function()  {
+      var val = $(this).val();
+      if (val == 'never'){
+        $('#ends-on').hide();
+      }else{
+        $('#ends-on').show();
+      }
+    });
+</script>

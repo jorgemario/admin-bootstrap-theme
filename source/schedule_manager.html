@@ -3,85 +3,85 @@ layout: base
 title: Bootstrap based theme - jorgemario
 ---
 <h1 class="page-title">
-  <i class="icon-th-list"></i>
+  <i class="icon-calendar"></i>
   Calendario de Actividades
   <div class="pull-right">
-    <a href="new_event.html" class="btn btn-small btn-warning">Adicionar Nueva Actividad</a>
+    <a href="new_event.html" class="btn btn-small btn-warning"><i class="icon-calendar"></i> Adicionar Nueva Actividad</a>
   </div>
 </h1>
 
 <div id="calendar"></div>
 
 <script>
-  $('#calendar').fullCalendar({
-    header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-    },
-    events : [
-      {
-        title: 'Spinning',
-        start: 'Thu, 18 Oct 2012 14:00:00 EST',
-        allDay: false,
-        url: 'edit_event.html'
+    $('#calendar').fullCalendar({
+      header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
       },
-      {
-        title: 'Step',
-        start: 'Thu, 18 Oct 2012 18:00:00 EST',
-        allDay: false,
-        backgroundColor: '#FAA732',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Yoga',
-        start: 'Thu, 18 Oct 2012 18:30:00 EST',
-        allDay: false,
-        backgroundColor: '#BD362F',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Tae-bo',
-        start: 'Thu, 18 Oct 2012 19:30:00 EST',
-        allDay: false,
-        backgroundColor: '#51A351',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Spinning',
-        start: 'Fri, 19 Oct 2012 14:00:00 EST',
-        allDay: false,
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Step',
-        start: 'Fri, 19 Oct 2012 18:00:00 EST',
-        allDay: false,
-        backgroundColor: '#FAA732',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Yoga',
-        start: 'Fri, 19 Oct 2012 18:30:00 EST',
-        allDay: false,
-        backgroundColor: '#BD362F',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Tae-bo',
-        start: 'Fri, 19 Oct 2012 18:30:00 EST',
-        allDay: false,
-        backgroundColor: '#51A351',
-        url: 'edit_event.html'
-      },
-      {
-        title: 'Tae-bo',
-        start: 'Mon, 22 Oct 2012 18:30:00 EST',
-        allDay: false,
-        backgroundColor: '#51A351',
-        url: 'edit_event.html'
-      },
+      events : [
+        {
+          title: 'Spinning',
+          start: 'Thu, 18 Oct 2012 14:00:00 EST',
+          allDay: false,
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Step',
+          start: 'Thu, 18 Oct 2012 18:00:00 EST',
+          allDay: false,
+          backgroundColor: '#FAA732',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Yoga',
+          start: 'Thu, 18 Oct 2012 18:30:00 EST',
+          allDay: false,
+          backgroundColor: '#BD362F',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Tae-bo',
+          start: 'Thu, 18 Oct 2012 19:30:00 EST',
+          allDay: false,
+          backgroundColor: '#51A351',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Spinning',
+          start: 'Fri, 19 Oct 2012 14:00:00 EST',
+          allDay: false,
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Step',
+          start: 'Fri, 19 Oct 2012 18:00:00 EST',
+          allDay: false,
+          backgroundColor: '#FAA732',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Yoga',
+          start: 'Fri, 19 Oct 2012 18:30:00 EST',
+          allDay: false,
+          backgroundColor: '#BD362F',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Tae-bo',
+          start: 'Fri, 19 Oct 2012 18:30:00 EST',
+          allDay: false,
+          backgroundColor: '#51A351',
+          url: 'edit_event.html'
+        },
+        {
+          title: 'Tae-bo',
+          start: 'Mon, 22 Oct 2012 18:30:00 EST',
+          allDay: false,
+          backgroundColor: '#51A351',
+          url: 'edit_event.html'
+        },
 
-    ]
-  });
+      ]
+    });
 </script
