@@ -18,11 +18,17 @@ title: Bootstrap based theme - jorgemario
       </div>
     </div>
     <div class="control-group">
-          <label class="control-label" for="inputName">Encargado</label>
-          <div class="controls">
-            <input type="text" id="inputName" placeholder="Ej: Arnold" class="span5">
-          </div>
-        </div>
+      <label class="control-label" for="inputName">Encargado</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Ej: Arnold" class="span5">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Salon</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Ej: Sala Roja" class="span5">
+      </div>
+    </div>
     <div class="control-group">
       <label class="control-label" for="inputName">Descripcion</label>
       <div class="controls">
@@ -39,11 +45,26 @@ title: Bootstrap based theme - jorgemario
     <div class="control-group">
       <label class="control-label" for="inputName">Precio</label>
       <div class="controls">
-        $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
+        <div class="input-prepend">
+          <span class="add-on">$</span>
+          <input class="span2" id="prependedInput" size="16" type="text" placeholder="Ej: 120.000">
+          <p class="help-inline">o</p>
+          <label class="checkbox inline">
+            <input type="checkbox">
+            Gratis
+        </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Capacidad</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Ej: 50" class="span1">
         <p class="help-inline">o</p>
         <label class="checkbox inline">
           <input type="checkbox">
-          Gratis
+          Ilimiatada
       </label>
       </div>
     </div>
@@ -56,7 +77,14 @@ title: Bootstrap based theme - jorgemario
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="inputName">Requiere Matricula</label>
+      <label class="control-label" for="inputName">Permitir Lista de Espera</label>
+      <div class="controls">
+        <input type="checkbox" checked="checked">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Requiere Subscripcion</label>
       <div class="controls">
         <input type="checkbox" checked="checked">
       </div>
