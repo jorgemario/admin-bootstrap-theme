@@ -12,6 +12,7 @@ title: Settings
     <li class="active"><a href="#general-info" data-toggle="tab">Datos Basicos</a></li>
     <li><a href="#users" data-toggle="tab">Usuarios</a></li>
     <li><a href="#partners" data-toggle="tab">Integraciones</a></li>
+    <li><a href="#payments" data-toggle="tab">Metodos de Pago</a></li>
     <li><a href="#plans" data-toggle="tab">Plan</a></li>
     <li><a href="#invoices" data-toggle="tab">Facturas</a></li>
   </ul>
@@ -220,6 +221,21 @@ title: Settings
             <label class="control-label" for="direccion">Direccion</label>
             <div class="controls">
               <textarea class="span5" id="direccion"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="country">Pais</label>
+            <div class="controls">
+              <select id="country">
+                <option value="">Colombia</option>
+                <option value="">Chile</option>
+                <option value="">Peru</option>
+                <option value="">Argentina</option>
+                <option value="">Venezuela</option>
+                <option value="">Ecuador</option>
+                <option value="">Brasil</option>
+              </select>
+            </div>
           </div>
         </fieldset>
 
@@ -380,6 +396,49 @@ title: Settings
               <a href="#" class="btn btn-info"><i class="icon-google-plus"></i> Conectar con Google Plus</a>
           </div>
         </div>
+    </div>
+    <div class="tab-pane" id="payments">
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-credit-card"></i>
+            <h3>Wolfy</h3>
+        </div> <!-- /widget-header -->
+          
+        <div class="widget-content">
+            <a href="#" class="btn btn-info"><i class="icon-credit-card"></i> Conectar con Wolfy</a>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-credit-card"></i>
+            <h3>Paypal</h3>
+        </div> <!-- /widget-header -->
+          
+        <div class="widget-content">
+            <a href="#" class="btn btn-info"><i class="icon-facebook-sign"></i> Conectar con Paypal</a>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-credit-card"></i>
+            <h3>Pagos Online</h3>
+        </div> <!-- /widget-header -->
+          
+        <div class="widget-content">
+            <a href="#" class="btn btn-info"><i class="icon-credit-card"></i> Pagos Online</a>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-credit-card"></i>
+            <h3>PSE</h3>
+        </div> <!-- /widget-header -->
+          
+        <div class="widget-content">
+            <a href="#" class="btn btn-info"<i class="icon-credit-card"></i> Conectar con PSE</a>
+        </div>
+      </div>
     </div>
     <div class="tab-pane" id="plans">
       <div class="widget">

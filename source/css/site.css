@@ -15,7 +15,11 @@ h3 {
 
 form{
 	background-color: white;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
+}
+
+.form-actions{
+	padding-bottom: 0px;
 }
 
 textarea{
@@ -281,4 +285,8 @@ ul#rightlist li.active {
 .widget-header > .pull-right > a [class^="icon-"], .widget-header > .pull-right > a [class*=" icon-"] {
 	color: white;
 	margin-right: 3px;
+}
+
+.thumbnails > .span3 {
+	width: 250px;
 }
