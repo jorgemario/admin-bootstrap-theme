@@ -55,6 +55,24 @@ title: Bootstrap based theme - jorgemario
         </label>
         </div>
       </div>
+    </div>  
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Requiere Planes</label>
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox"> Mensualidad
+        </label>
+        <label class="checkbox">
+          <input type="checkbox"> Ticketera x 8
+        </label>
+        <label class="checkbox">
+          <input type="checkbox"> Ticketera x 12
+        </label>
+        <label class="checkbox">
+          <input type="checkbox"> Pesas
+        </label>
+      </div>
     </div>
 
     <div class="control-group">
@@ -70,25 +88,12 @@ title: Bootstrap based theme - jorgemario
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="inputName">Permitir Venta Publica</label>
-      <div class="controls">
-        <input type="checkbox" checked="checked">
-      </div>
-    </div>
-
-    <div class="control-group">
       <label class="control-label" for="inputName">Permitir Lista de Espera</label>
       <div class="controls">
         <input type="checkbox" checked="checked">
       </div>
     </div>
 
-    <div class="control-group">
-      <label class="control-label" for="inputName">Requiere Subscripcion</label>
-      <div class="controls">
-        <input type="checkbox" checked="checked">
-      </div>
-    </div>
 
   </fieldset>
 
@@ -122,6 +127,7 @@ title: Bootstrap based theme - jorgemario
           <select id="repeat" class="select required" name="repeat">
             <option value="never" selected="selected">Nunca</option>
             <option value="every_day">Diario</option>
+            <option value="every_day">Cada Segundo Dia</option>
             <option value="every_week">Cada Semana</option>
             <option value="every_2weeks">Cada 2 Semanas</option>
             <option value="every_month">Cada Mes</option>

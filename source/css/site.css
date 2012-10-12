@@ -25,6 +25,10 @@ textarea{
 	height: 70px;
 }
 
+.tab-content {
+	overflow: hidden;
+}
+
 
 .widget {
     margin-bottom: 2em;
