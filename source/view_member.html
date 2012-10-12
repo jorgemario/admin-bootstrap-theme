@@ -28,23 +28,32 @@ title: Bootstrap based theme - jorgemario
       <form class="form-horizontal">
         <fieldset>
           <legend>Informacion General</legend>
-          <div class="control-group">
-            <label class="control-label" for="first_name">Nombre</label>
-            <div class="controls">
-              <input type="text" id="first_name" placeholder="Ej: Juan" class="span5">
+          <div class="row">
+            <div class="span5">
+              <div class="control-group">
+                <label class="control-label" for="first_name">Nombre</label>
+                <div class="controls">
+                  <input type="text" id="first_name" placeholder="Ej: Juan" class="span3">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="last_name">Apellido</label>
+                <div class="controls">
+                  <input type="text" id="last_name" placeholder="Ej: Maya" class="span3">
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <label class="control-label" for="notes">Notas</label>
+                <div class="controls">
+                  <textarea id="notes" class="span3"></textarea>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="last_name">Apellido</label>
-            <div class="controls">
-              <input type="text" id="last_name" placeholder="Ej: Maya" class="span5">
-            </div>
-          </div>
-          
-          <div class="control-group">
-            <label class="control-label" for="notes">Notas</label>
-            <div class="controls">
-              <textarea class="span5" id="notes"></textarea>
+            <div class="span3">
+              <a href="#" class="thumbnail">
+                  <img src="/images/360x270.gif" alt="">
+              </a>
             </div>
           </div>
         </fieldset>
@@ -83,6 +92,7 @@ title: Bootstrap based theme - jorgemario
             <div class="controls">
               <textarea class="span5" id="direccion"></textarea>
           </div>
+        </div>
         </fieldset>
         <div class="form-actions">
           <button type="submit" class="btn btn-info"><i class="icon-th-list"></i> Crear Plan</button> 
@@ -253,6 +263,15 @@ title: Bootstrap based theme - jorgemario
                 <div class="controls">
                   <textarea id="detalles" class="span5" name="detalles"></textarea>
                 </div>
+              </div>
+
+              <div class="form-actions">
+                <a href="" class="btn btn-small btn-info">
+                  <i class="icon-signin"></i> Reservar
+                </a>
+                <a href="" class="btn btn-small btn-warning">
+                  <i class="icon-ok"> Confirmar</i> 
+                </a>
               </div>
             </fieldset>
           </form>

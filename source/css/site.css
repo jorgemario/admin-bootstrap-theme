@@ -15,19 +15,23 @@ h3 {
 
 form{
 	background-color: white;
-	padding: 10px 10px 0px 10px;
 }
 
-.form-actions{
-	padding-bottom: 0px;
+legend{
+	padding-left: 20px;
 }
 
 textarea{
 	height: 70px;
 }
 
+
 .widget {
     margin-bottom: 2em;
+}
+
+.widget .form{
+	padding-bottom: 0px;
 }
 
 .form-actions{

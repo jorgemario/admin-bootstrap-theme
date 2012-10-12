@@ -1,10 +1,6 @@
----
-layout: base
-title: Dashboard
----
-<script src='{{ root_url }}/javascripts/jqplot/plugins/jqplot.barRenderer.min.js'></script>
-<script src='{{ root_url }}/javascripts/jqplot/plugins/jqplot.categoryAxisRenderer.min.js'></script>
-<script src='{{ root_url }}/javascripts/jqplot/plugins/jqplot.pieRenderer.min.js'></script>
+<script src='/javascripts/jqplot/plugins/jqplot.barRenderer.min.js'></script>
+<script src='/javascripts/jqplot/plugins/jqplot.categoryAxisRenderer.min.js'></script>
+<script src='/javascripts/jqplot/plugins/jqplot.pieRenderer.min.js'></script>
 <script type="text/javascript">
   $(document).ready(function(){
     var s1 = [0, 25, 15, 2];
@@ -114,7 +110,7 @@ title: Dashboard
 
 <div class="widget widget-table">
   <div class="widget-header">
-    <i class="icon-calendar"></i>
+    <i class="icon-th-list"></i>
     <h3>Agenda del dia</h3>
   </div>
   <div class="widget-content">
@@ -130,7 +126,7 @@ title: Dashboard
       <tbody>
         <tr>
           <td>10:30 am</td>
-          <td><a href="edit_event.html">Tae-bo</a></td>
+          <td>Tae-bo</td>
           <td>Arnold</td>
           <td>27</td>
         </tr>

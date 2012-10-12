@@ -1,0 +1,221 @@
+---
+layout: desk
+title: Recepcion
+---
+
+<div class="widget">
+  <div class="widget-header">
+    <i class="icon-signin"></i> <h3>Registrar Asistencia</h3>
+  </div>
+  <div class="widget-content">
+    <div class="row">
+      <div class="offset3">
+        <form action="" class="form-inline">
+          <fieldset>
+              <label class="control-label" for="inputName">Usuario:</label>
+              <input type="text" id="inputName" class="span3" placeholder="Cedula, Nombre o Usuario">
+              <button class="btn btn-info">
+                <i class="icon-signin"></i> Registrar Asistencia
+              </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="widget" id="info" style="display:none;">
+  <div class="widget-header">
+    <i class="icon-user"></i> <h3>Informacion del Subscriptor</h3>
+  </div>
+  <div class="widget-content">
+    <div class="row">
+      <div class="span8">
+        <div class="stat-container">
+          <div class="stat-holder">
+            <div class="stat">
+              <span>100</span>
+              Total Asistencias Plan Actual 
+            </div>
+          </div>
+          <div class="stat-holder">
+            <div class="stat">
+              <span>25</span>
+              Asistencias Disponibles
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span2">
+            <div><strong>Plan:</strong></div>
+            <div><strong>Fecha de Vencimiento:</strong></div>
+            <div><strong>Fecha de Compra:</strong></div>
+          </div>    
+          <div class="span2">
+            <div>Mensualidad</div>
+            <div>Oct 12, 2012</div>
+            <div>Sep 12, 2012</div>
+          </div>    
+        </div>
+        <div>
+          <a href="" class="offset3 btn btn-success">
+            <i class="icon-signin"></i> Confirmar
+          </a>
+          <a href="" class="btn">Cancelar</a>
+        </div>
+      </div>
+      <div class="span3">
+        <a href="#" class="thumbnail">
+            <img src="/images/360x270.gif" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="widget" id="add-subscription" style="display:none;">
+  <div class="widget-header">
+    <i class="icon-user"></i> <h3>Nueva Subscripcion</h3>
+  </div>
+  <div class="widget-content">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Informacion General</legend>
+        <div class="control-group">
+          <label class="control-label" for="first_name">Nombre</label>
+          <div class="controls">
+            <input type="text" id="first_name" placeholder="Ej: Juan" class="span5">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="last_name">Apellido</label>
+          <div class="controls">
+            <input type="text" id="last_name" placeholder="Ej: Maya" class="span5">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="last_name">Cedula</label>
+          <div class="controls">
+            <input type="text" id="last_name" placeholder="Ej: 89824841" class="span5">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="notes">Notas</label>
+          <div class="controls">
+            <textarea class="span5" id="notes"></textarea>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="last_name">Foto</label>
+          <div class="controls">
+            <input type="file" id="last_name" placeholder="Ej: Maya" class="span3">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacion de Contacto</legend>
+        <div class="control-group">
+          <label class="control-label" for="email">Email</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-envelope"></i></span>
+              <input class="string required date span3" id="email" name="email" required="required" type="text" placeholder="Ej: juanemaya@gmail.com">
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="mobile">Celular</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-phone-sign"></i></span>
+              <input class="string required date span3" id="mobile" name="mobile" required="required" type="text" placeholder="Ej: 4133312">
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="phone">Casa</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-phone"></i></span>
+              <input class="string required date span3" id="phone" name="phone" required="required" type="text" placeholder="Ej: 3123441">
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="direccion">Direccion</label>
+          <div class="controls">
+            <textarea class="span5" id="direccion"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacion de Compra</legend>
+        <div class="control-group">
+          <label class="control-label" for="plan">Plan</label>
+          <div class="controls">
+            <select id="plan" name="plan">
+              <option>Seleccionar Plan</option>
+              <option>Tiquetera x 8</option>
+              <option>Tiquetera x 12</option>
+              <option>Mensualidad</option>
+              <option>Estudiantes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="expiration">Fecha de Compra</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-calendar"></i></span>
+              <input type="text" id="expiration" class="span2 date">
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="plan">Forma de pago</label>
+          <div class="controls">
+            <select id="plan" name="plan">
+              <option>Seleccionar Forma de Pago</option>
+              <option>Efectivo</option>
+              <option>Transferencia Bancaria</option>
+              <option>Tarjeta de Credito</option>
+              <option>Otra</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="detalles">Detalles</label>
+          <div class="controls">
+            <textarea id="detalles" class="span5" name="detalles"></textarea>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-info"><i class="icon-group"></i> Crear Membresia</button> 
+        <button class="btn">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  $('#inputName').blur(function(){
+    var val = $(this).val();
+    if (val == '111111111'){
+      $('#add-subscription').show();
+      $('#info').hide();
+    }else{
+      $('#info').show();
+      $('#add-subscription').hide();
+    }
+  });
+</script>

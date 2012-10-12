@@ -1,0 +1,138 @@
+<h1 class="page-title">
+  <i class="icon-home"></i>
+  Nuevo Evento
+</h1>
+
+
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Informacion General</legend>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Nombre</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Ej: Estudiantil" class="span8">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Descripcion</label>
+      <div class="controls">
+        <textarea class="span8"></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputName">Restricciones</label>
+      <div class="controls">
+        <textarea class="span8"></textarea>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Precio</label>
+      <div class="controls">
+        $ <input type="text" id="inputName" placeholder="Ej: 100000" class="span2">
+        <p class="help-inline">o</p>
+        <label class="checkbox inline">
+          <input type="checkbox">
+          Gratis
+      </label>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Permitir Venta Publica</label>
+      <div class="controls">
+        <input type="checkbox" checked="checked">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="inputName">Requiere Matricula</label>
+      <div class="controls">
+        <input type="checkbox" checked="checked">
+      </div>
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <fieldset>
+      <legend>Progamacion</legend>
+      <div class="control-group string required">
+        <label class="string required control-label" for="time">Fecha Iincio</label>
+        <div class="controls">
+          <div class="input-prepend">
+            <span class="add-on"><i class="icon-calendar"></i></span>
+            <input class="string required datetime span6 hasDatepicker" id="time" name="time" required="required" type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="inputName">Duracion</label>
+        <div class="controls">
+          <input type="text" id="inputName" placeholder="Ej: 30" class="span2">
+          <select class"inline" class="span2">
+            <option>Minutos</option>
+            <option>Horas</option>
+          </select>
+        </div>
+      </div>
+    
+      <div class="control-group select required">
+        <label class="select required control-label" for="repeat">Se Repite</label>
+        <div class="controls">
+          <select class="select required" name="repeat">
+            <option value="never" selected="selected">never</option>
+            <option value="every_day">Diario</option>
+            <option value="every_week">Cada Semana</option>
+            <option value="every_2weeks">Cada 2 Semanas</option>
+            <option value="every_month">Cada Mes</option>
+            <option value="every_year">Cada Año</option>
+          </select>
+        </div>
+      </div>
+        
+        <div id="repeat-configuration" class="control-group">
+          <label class="radio_buttons control-label">Repeat Ends</label>
+          <div class="controls">
+            <label class="radio">
+              <input id="repeat_ends_never" type="radio" name="repeat_ends" value="never" checked="checked">
+              Never
+            </label>
+            <label class="radio">
+              <input type="radio" name="repeat_ends" value="date">
+              On Specific Date
+            </label>
+          </div>
+
+          <div class="control-group string optional" id="repeat_end_date-configuration" style="">
+            <label class="string optional control-label" for="repeat_end_date">Terminar Repeticiones En</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on"><i class="icon-calendar"></i></span>
+                <input class="string required datetime span6 hasDatepicker" id="time" name="time" required="required" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+    </fieldset>
+  </fieldset>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Save</button> 
+    <button class="btn">Cancel</button>
+  </div>
+
+  <script>
+    $('.datetime').datetimepicker(
+      {
+        ampm : true, 
+        minDate: new Date(),
+        dateFormat: "d/m/yy"
+      }
+    );
+    $('.date').datepicker({minDate: new Date()});
+  </script>
+
+
+</form>

@@ -1,0 +1,15 @@
+$primary-color: #0B61A4;
+$backgroundImage: "/images/groovepaper.png";
+$para-color: #eee;
+$heading-color: #555555;
+$border-color: #E3E3E3;
+$gradient-start-color: #FFFFFF;
+$gradient-end-color: #F1F1F1;
+
+/*@import "compass/css3/box-shadow";*/
+@import "compass/css3";
+@import "compass/utilities";
+
+@mixin gradient {
+  @include background-image(linear-gradient(center top, $gradient-start-color $gradient-end-color));
+}

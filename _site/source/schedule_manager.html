@@ -1,0 +1,74 @@
+<h1 class="page-title">
+  <i class="icon-th-list"></i>
+  Calendario de Actividades
+  <div class="pull-right">
+    <a href="new_event.html" class="btn btn-small btn-warning">Adicionar Nueva Actividad</a>
+  </div>
+</h1>
+
+<div id="calendar"></div>
+
+<script>
+  $('#calendar').fullCalendar({
+    header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+    },
+    events : [
+      {
+        title: 'Spinning',
+        start: 'Thu, 18 Oct 2012 14:00:00 EST',
+        allDay: false,
+      },
+      {
+        title: 'Step',
+        start: 'Thu, 18 Oct 2012 18:00:00 EST',
+        allDay: false,
+        backgroundColor: '#FAA732'
+      },
+      {
+        title: 'Yoga',
+        start: 'Thu, 18 Oct 2012 18:30:00 EST',
+        allDay: false,
+        backgroundColor: '#BD362F'
+      },
+      {
+        title: 'Tae-bo',
+        start: 'Thu, 18 Oct 2012 19:30:00 EST',
+        allDay: false,
+        backgroundColor: '#51A351'
+      },
+      {
+        title: 'Spinning',
+        start: 'Fri, 19 Oct 2012 14:00:00 EST',
+        allDay: false,
+      },
+      {
+        title: 'Step',
+        start: 'Fri, 19 Oct 2012 18:00:00 EST',
+        allDay: false,
+        backgroundColor: '#FAA732'
+      },
+      {
+        title: 'Yoga',
+        start: 'Fri, 19 Oct 2012 18:30:00 EST',
+        allDay: false,
+        backgroundColor: '#BD362F'
+      },
+      {
+        title: 'Tae-bo',
+        start: 'Fri, 19 Oct 2012 18:30:00 EST',
+        allDay: false,
+        backgroundColor: '#51A351'
+      },
+      {
+        title: 'Tae-bo',
+        start: 'Mon, 22 Oct 2012 18:30:00 EST',
+        allDay: false,
+        backgroundColor: '#51A351'
+      },
+
+    ]
+  });
+</script

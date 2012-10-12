@@ -22,7 +22,7 @@ title: Configuracion Sitio Web
       <a href="#widgets" data-toggle="tab">Widgets</a>
     </li>
     <li>
-      <a href="#settings" data-toggle="tab">Settings</a>
+      <a href="#settings" data-toggle="tab">Configuracion</a>
     </li>
   </ul>
   <div class="tab-content">
@@ -222,52 +222,44 @@ title: Configuracion Sitio Web
       </div>
     </div>
     <div class="tab-pane" id="settings">
-      <div class="widget">
-        <div class="widget-header">
-            <i class="icon-cloud"></i>
-            <h3>Settings</h3>
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Settings</legend>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Prefijo</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">http://</span>
+                <input type="text" id="inputName" placeholder="Ej: wolfi" class="span2">
+              </div>
+              <span class="help-inline"><strong>.wolfie.com</strong></span>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Dominio</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">http://</span>
+                <input type="text" id="inputName" placeholder="Ej: www.wolfie.com" class="span3">
+              </div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Permitir Ventas Online</label>
+            <div class="controls">
+              <input type="checkbox" id="inputName">
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-actions">
+          <a href="" class="btn btn-info">
+            <i class="icon-cloud"></i> Guardar Configuracion
+          </a>
+          <a href="" class="btn">
+            Cancelar
+          </a>
         </div>
-        <div class="widget-content">
-           <form class="form-horizontal">
-            <fieldset>
-              <legend></legend>
-              <div class="control-group">
-                <label class="control-label" for="inputName">Prefijo</label>
-                <div class="controls">
-                  <div class="input-prepend">
-                    <span class="add-on">http://</span>
-                    <input type="text" id="inputName" placeholder="Ej: wolfi" class="span2">
-                  </div>
-                  <span class="help-inline"><strong>.wolfie.com</strong></span>
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="inputName">Dominio</label>
-                <div class="controls">
-                  <div class="input-prepend">
-                    <span class="add-on">http://</span>
-                    <input type="text" id="inputName" placeholder="Ej: www.wolfie.com" class="span3">
-                  </div>
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="inputName">Permitir Ventas Online</label>
-                <div class="controls">
-                  <input type="checkbox" id="inputName">
-                </div>
-              </div>
-              <div class="form-actions">
-                <a href="" class="btn btn-info">
-                  <i class="icon-cloud"></i> Guardar Configuracion
-                </a>
-                <a href="" class="btn">
-                  Cancelar
-                </a>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

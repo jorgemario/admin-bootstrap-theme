@@ -1,0 +1,21 @@
+{% capture root_url %}{{ site.url }}{% endcapture %}
+{% include head.html %}
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    {% include navbar.html %}
+  </div>
+
+  <div class="container">
+        {{ content }}
+    
+    <hr>
+
+    <footer>
+      {% include foot.html %}
+    </footer>
+
+  </div><!--/.fluid-container-->
+
+  {% include scripts.html %}
+</body>
+</html>
